@@ -6,7 +6,8 @@ const Button: React.FC<ButtonProps> = ({
     size = 'medium',
     shape = 'rounded-md',
     onClick,
-    className = ""
+    className = "",
+    styles = ""
 }) => {
     const sizeClasses = {
         small: 'px-3 py-1.5 text-sm',
@@ -17,12 +18,13 @@ const Button: React.FC<ButtonProps> = ({
     const shapeClasses = {
         'rounded-sm': 'rounded-sm',
         'rounded-md': 'rounded-md',
+        'rounded-lg': 'rounded-lg',
         'rounded-full': 'rounded-full'
     };
 
     const baseClasses = 'bg-blue-600 hover:bg-blue-700 text-white font-medium transition-colors duration-200 cursor-pointer';
 
-    const buttonClasses = `${baseClasses} ${sizeClasses[size]} ${shapeClasses[shape]} ${className}`;
+    const buttonClasses = `${baseClasses} ${sizeClasses[size]} ${shapeClasses[shape]} ${className} ${styles}`;
 
     return (
         <button
