@@ -8,5 +8,5 @@ export interface ButtonProps {
     shape?: 'rounded-sm' | 'rounded-md' | 'rounded-lg' | 'rounded-full';
     onClick?: () => void;
     className?: string;
-    styles?: string;
+    styles: string;
 }

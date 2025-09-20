@@ -7,7 +7,7 @@ const Button: React.FC<ButtonProps> = ({
     shape = 'rounded-md',
     onClick,
     className = "",
-    styles = ""
+    styles
 }) => {
     const sizeClasses = {
         small: 'px-3 py-1.5 text-sm',
